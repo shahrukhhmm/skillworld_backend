@@ -1,0 +1,28 @@
+@import './variable';
+
+//about
+.about{
+    background-color: $box-color;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+
+.about h2{
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: $text-color;
+
+}
+.about h3{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: red;
+}
+.about p{
+    letter-spacing: .1rem;
+    font-size: .8rem;
+}

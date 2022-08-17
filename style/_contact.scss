@@ -1,0 +1,136 @@
+@import './variable';
+
+
+.contactus{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../img/service/contact.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:$text-color;
+    padding: 40px ;
+    border-radius: 20px;
+   
+}
+.contactus-heading{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    color: #FFFFFF;
+    
+    -webkit-text-stroke: 2px $text-color;
+    text-shadow:
+       3px 3px 0 $hover-color,
+     -1px -1px 0 $hover-color,  
+      1px -1px 0 $hover-color,
+      -1px 1px 0 $hover-color,
+       1px 1px 0 $hover-color;
+}
+
+.component{
+    max-width: 100%;
+    margin-top: 50px;
+    background: $box-color;
+    padding: 20px;
+    border-radius: 20px;
+}
+.contactus-header {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contactus-detail{
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+// form
+
+.login-heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.container1{
+    background-color: rgba(0, 0,0,0.2);
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px black;
+    color: $text-color;
+    width: 100%;
+}
+.container1 a{
+    text-decoration: none;
+    color: $active-color;
+   
+}
+.btnform{
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0px;
+    font-family: inherit;
+    background-color: $active-color;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.btnform:active{
+    transform: scale(0.98);
+}
+
+.from-text{
+    margin-top: 20px;
+}
+.form-control1{
+    position: relative;
+    margin: 20px 0 40px;
+    max-width: 300px;
+    min-width: 200px;
+}
+.form-control1 input,textarea{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+.form-control1 input:valid,
+.form-control1 input:focus{
+   
+    outline: 0;
+    border-bottom-color: $active-color;
+}
+
+.form-control1 textarea:valid,
+.form-control1 textarea:focus{
+    outline: 0;
+    border-bottom-color: $active-color;
+}
+.form-control1 label{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-size: 1rem;
+}
+
+.form-control1 label span{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700px;
+    transition: .5s cubic-bezier(.68, -0.55, .265 , 1.55);
+}
+
+.form-control1 input:valid +label span,
+.form-control1 input:focus +label span{
+    color: $active-color;
+    transform: translateY(-25px);
+}
+.form-control1 textarea:valid +label span,
+.form-control1 textarea:focus +label span {
+    color: $active-color;
+    transform: translateY(-25px);
+}
+

@@ -1,0 +1,108 @@
+@import './variable';
+
+.cards {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    
+}
+
+.card-body {
+
+    background: transparent;
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    box-sizing: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+// .card-body:hover .card-inner {
+//     transform: rotateY(180deg);
+// }
+.rotate{
+    transform: rotateY(180deg);
+}
+
+.frontside,
+.backside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-text{
+    display: none;
+
+}
+.card-text p{
+    font-size: 1.5rem;
+    color: red;
+}
+
+.frontside:hover > .card-text{
+    display: block;
+    
+}
+.frontside:hover > p{
+    display: none;
+    
+}
+
+.backside {
+    background-color: $box-color;
+    color: rgb(0, 0, 0);
+}
+
+ .backside h1 {
+     font-size: 1.5rem;
+    color: $text-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.backside {
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.card-body,
+.card-inner,
+.frontside,
+.backside {
+    border-radius: 10px;
+}
+.section-header{
+    color: #FFFFFF;
+    
+    -webkit-text-stroke: 2px $text-color;
+    text-shadow:
+       3px 3px 0 $hover-color,
+     -1px -1px 0 $hover-color,  
+      1px -1px 0 $hover-color,
+      -1px 1px 0 $hover-color,
+       1px 1px 0 $hover-color;
+}
+.section-header h2{
+    font-size:3rem;
+}
